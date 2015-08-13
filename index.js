@@ -10,17 +10,17 @@ var Tween = function(settings) {
 
 Tween.prototype = {
   getState: function() {
-    let state = {}
-    for(let propertyName in this.options.to) {
-      const b = this.options.from[propertyName]
-      const c = this.options.to[propertyName] - b
+    var state = {}
+    for(var propertyName in this.options.to) {
+      var b = this.options.from[propertyName]
+      var c = this.options.to[propertyName] - b
       state[propertyName] = this.options.easingFunction(this.elapsedTime, b, c, this.options.duration)
     }
     return state
   },
 
   update: function() {
-    const now = Tween.time.now()
+    var now = Tween.time.now()
     this.elapsedTime += (now - this.lastTime)
     this.lastTime = now
     if(this.elapsedTime >= this.options.duration) {
