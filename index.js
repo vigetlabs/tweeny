@@ -36,8 +36,8 @@ Tween.prototype = {
 Tween.defaults = {
   duration: 500,
   easingFunction: linear,
-  onComplete: () => {},
-  onUpdate: () => {}
+  onComplete: function() {},
+  onUpdate: function() {}
 }
 
 Tween.time = window.performance || window.Date
