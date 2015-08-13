@@ -13,11 +13,11 @@ var easeInOutQuart = require('tweeny/easing/easeInOutQuart')
 var target = document.querySelector('#thing')
 
 var tween = new Tween({
-  from: {opacity: 0},
-  to: {opacity: 1},
+  from: { opacity: 0 },
+  to: { opacity: 1 },
   duration: 1000,
   easing: easeInOutQuart,
-  onUpdate(state) {
+  onUpdate: function(state) {
     target.style.opacity = state.opacity
   },
   onComplete: function() {
@@ -25,3 +25,5 @@ var tween = new Tween({
   }
 })
 ```
+
+For < IE 10 support, you'll need a `requestAnimationFrame` polyfill.

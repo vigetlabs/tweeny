@@ -1,6 +1,6 @@
 {
   "name": "tweeny",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A teeny tween class",
   "main": "dist/index.js",
   "repository": {
