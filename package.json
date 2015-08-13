@@ -1,0 +1,27 @@
+{
+  "name": "tweeny",
+  "version": "1.0.0",
+  "description": "A teeny tween class",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vigetlabs/tweeny.git"
+  },
+  "keywords": [
+    "tween",
+    "animate"
+  ],
+  "author": {
+    "name": "Dan Tello",
+    "email": "dan.tello@viget.com",
+    "url": "http://viget.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vigetlabs/tweeny/issues"
+  },
+  "homepage": "https://github.com/vigetlabs/tweeny",
+  "dependencies": {
+    "object-assign": "^3.0.0"
+  }
+}
