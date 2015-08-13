@@ -26,4 +26,6 @@ var tween = new Tween({
 })
 ```
 
-For < IE 10 support, you'll need a `requestAnimationFrame` polyfill.
+For < IE 10 support, you'll need to `requestAnimationFrame` polyfill.
+
+Easing functions by [Robert Penner](http://robertpenner.com/easing).
