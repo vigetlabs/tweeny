@@ -42,4 +42,8 @@ Tween.defaults = {
 
 Tween.time = window.performance || window.Date
 
+Tween.time.now = Tween.time.now || function() {
+  return new Date().getTime()
+}
+
 module.exports = Tween
